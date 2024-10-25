@@ -19,6 +19,13 @@ def get_str(opt, arglist):
     output = f"Can't feed your pet {args[0]} {args[1]} {amt_plural} if you only have {args[2]}!\n"
   elif (opt == "bad_buff"):
     output = f"Couldn't find mission buff " + args[0] + "!\nPlease refer to the list in the popularity document in important-links!"
+  elif (opt == "bad_upgrade"):
+    output = f"Couldn't find upgrade " + args[0] + "!\n"
+  elif (opt == "few_dtp"):
+    output = f"Cannot convert {args[0]} DTP to UP, you only have {args[1]} DTP!\n"
+  elif (opt == "few_up"):
+    u_up = get_uvar("u_up", 0)
+    output = f"Cannot buy upgrade {args[0]}, which costs {args[1]} UP, when you only have {u_up}!"
   elif (opt == "few_cred"):
     u_cred = get_uvar("u_cred", 0)
     if (args[0] == "donate"):

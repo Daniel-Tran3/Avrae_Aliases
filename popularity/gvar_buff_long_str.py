@@ -11,6 +11,7 @@ def get_str(opt, key):
     output += f"Use `!popularity search [buff]` to find a specific mission buff (one-word only, please!)\n"
     output += f"Use `!popularity buy [buff] [club to raise acclaim]` to buy a buff, raising acclaim for a club of your choice!\n"
     output += f"Use `!popularity buy [buff] [club to raise acclaim]` to buy a buff, raising acclaim for a club of your choice!\n"
+    output += f"Use `!popularity set [num]` to set your popularity!\n"
     output += f"Use `!popularity donate [num] [club to create] [club to raise acclaim]` to donate [num] credits towards creating a club, "
     output += f"also choosing a club to raise acclaim for!\nNote: If you would like to split your acclaim, please make a note underneath the command!\n"
     output += f"When specifying an argument with more than two words, please put it in quotation marks!"

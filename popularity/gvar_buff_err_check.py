@@ -1,6 +1,6 @@
 !gvar edit 13e7b4ba-2121-4be7-a9dd-7a7b7c556e70
 
-pop_arglens = {"search": 2, "buy": 3, "donate": 4}
+pop_arglens = {"search": 2, "buy": 3, "donate": 4, "set": 2}
 
 def pop_err_check(arg_json):
   using(
@@ -13,14 +13,14 @@ def pop_err_check(arg_json):
   if (len(args) > 0):
     if (args[0] in pop_arglens.keys() and len(args) < int(pop_arglens[args[0]])):
       err_arg_str = f"1|few_args|{args[0]}"
-    if (args[0] == "donate"):
+    elif (args[0] == "donate" or args[0] == "set"):
       try:
         num = int(args[1])
-        if (num > u_cred):
+        if (args[0] == "donate" and num > u_cred):
           err_arg_str = f"1|few_cred|{args[0]}.{num}"
       except ("ValueError", "TypeError"):
         err_arg_str = f"1|not_num|{args[1]}"
-    if (args[0] == "buy"):
+    elif (args[0] == "buy"):
       cost = buffs.get_cost(args[1])
       if (cost == 0):
         err_arg_str = f"1|bad_buff|{args[1]}"

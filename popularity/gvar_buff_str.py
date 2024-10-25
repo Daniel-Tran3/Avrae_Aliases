@@ -1,19 +1,21 @@
 !gvar edit fc374787-4fd7-4336-8336-0cef0f425004
 
-keys = ["Cramming", "Energy Drink", "Late Night Snack", "Open Notes", "Student Gossip", "Teacher's Pet"]
-
 def get_str(opt, arg_json):
   args = load_json(arg_json)
   u_cred = get_uvar("u_cred")
   u_pop = get_uvar("u_popularity")
   using(
     long_str="f1f1fd81-9b4a-49ea-ac2e-33345f21982b",
-    buff_tools="3ef2b289-b512-4267-839c-1abe61a60c8e"
+    buff_tools="3ef2b289-b512-4267-839c-1abe61a60c8e",
+    dicts="712955e6-33c7-483c-8de8-a8db26b6530b",
   )
+  keys = dicts.get_keys()
   if (opt == "pop_help"):
     output = long_str.get_str(opt, "")
   elif (opt == "stats"):
     output = f"You have {u_cred} credits!\nYou have {u_pop} popularity!\n"
+  elif (opt == "set"):
+    output = f"You now have {u_pop} popularity!\n"
   elif (opt == "list"):
     output = "Listing all Mission Buffs:\n"
     for key in keys:

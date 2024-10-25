@@ -6,7 +6,7 @@ using(
   pop_tool="3ef2b289-b512-4267-839c-1abe61a60c8e",
   pop_str="fc374787-4fd7-4336-8336-0cef0f425004"
 )
-base_opts = ["stats", "list", "search", "buy", "donate"]
+base_opts = ["stats", "list", "search", "buy", "donate", "set"]
 set_uvar_nx("u_cred", 0)
 set_uvar_nx("u_popularity", 0)
 arg_json = dump_json(args)
@@ -23,6 +23,8 @@ if (error == 0 and len(args) > 0):
       pop_tool.buy(args[1])
     elif (opt == "donate"):
       pop_tool.donate(args[1])
+    elif (opt == "set"):
+      set_uvar("u_popularity", args[1])
     output = pop_str.get_str(opt, arg_json)
 </drac2>
 -title "Popularity"

@@ -2,9 +2,9 @@
 
 # This module manipulates buff stats
 
-name_dict = {"cram": "Cramming", "energy": "Energy Drink", "drink": "Energy Drink", "late": "Late Night Snack", "night": "Late Night Snack", "snack": "Late Night Snack", "open": "Open Notes", "notes": "Open Notes", "teacher": "Teacher's Pet", "pet": "Teacher's Pet"}
+name_dict = {"cram": "Cramming", "energy": "Energy Drink", "drink": "Energy Drink", "late": "Late Night Snack", "night": "Late Night Snack", "snack": "Late Night Snack", "open": "Open Notes", "notes": "Open Notes", "teacher": "Teacher's Pet", "pet": "Teacher's Pet", "are you sure": "Are You Sure You Want To Do That?", "you want to do that": "Are You Sure You Want To Do That?", "calculated": "Calculated Comedy Club", "comedy": "Calculated Comedy Club", "club": "Calculated Comedy Club"}
 
-cost_dict = {"Cramming": 5, "Energy Drink": 5, "Late Night Snack": 5, "Open Notes": 3, "Student Gossip": 3, "Teacher's Pet": 4}
+cost_dict = {"Cramming": 5, "Energy Drink": 5, "Late Night Snack": 5, "Open Notes": 3, "Student Gossip": 3, "Teacher's Pet": 4, "Are You Sure You Want To Do That?": 4, "Calculated Comedy Club": 4}
 
 def get_name(input):
   if (input in name_dict.keys()):

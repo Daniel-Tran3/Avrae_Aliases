@@ -15,4 +15,8 @@ def get_ftext(key):
   cc += "Cheekily cheat! Cheerily celebrate! Collaboratively concoct! Craftily collude! Conveniently communicate! Cause chuckles!\n"
   cc += "Curious? Come courageously chase cavalcading club-created comedy!"
   ftext["Calculated Comedy Club"] = cc
+  ftext["Giving 110%"] = "Push past your limits! Just one more rep!"
+  ftext["Research Recall"] = "Hey, wait a minute! Wasn't the Science Club writing a paper on this?"
+  ftext["Careful Planning"] = "Measure twice, cast once."
+  ftext["Seek The Truth"] = "Nothing gets between a journalist and their scoop!"
   return f"{ftext[key]}" if key in ftext.keys() else "Bad ftext key."

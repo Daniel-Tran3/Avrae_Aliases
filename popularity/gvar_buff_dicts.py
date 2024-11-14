@@ -12,5 +12,5 @@ def get_ftext(key):
   return ftext.get_ftext(key)
 
 def get_keys():
-  keys = ["Are You Sure You Want To Do That?", "Calculated Comedy Club", "Careful Planning", "Cramming", "Energy Drink", "Giving 110%", "Late Night Snack", "Open Notes", "Research Recall", "Seek The Truth", "Student Gossip", "Teacher's Pet"]
+  keys = ["Are You Sure You Want To Do That?", "Calculated Comedy Club", "Camaraderie Club", "Careful Planning", "Cramming", "Energy Drink", "Giving 110%", "Late Night Snack", "Open Notes", "Research Recall", "Science Rules!", "Seek The Truth", "Student Gossip", "Teacher's Pet"]
   return keys

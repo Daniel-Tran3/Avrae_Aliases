@@ -6,7 +6,7 @@ def get_desc(key):
     desc2="7db1315a-b0ab-45d5-bd57-60b6dc90c353"
   )
   desc1_keys = ["Cramming", "Energy Drink", "Late Night Snack", "Open Notes", "Student Gossip", "Teacher's Pet", "Are You Sure You Want To Do That?", "Calculated Comedy Club", "Giving 110%", "Research Recall"]
-  desc2_keys = ["Careful Planning", "Seek The Truth"]
+  desc2_keys = ["Careful Planning", "Seek The Truth", "Science Rules!", "Camaraderie Club"]
   result = ""
   if key in desc1_keys:
     result = desc1.get_desc(key)

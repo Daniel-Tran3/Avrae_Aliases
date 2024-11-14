@@ -19,4 +19,6 @@ def get_ftext(key):
   ftext["Research Recall"] = "Hey, wait a minute! Wasn't the Science Club writing a paper on this?"
   ftext["Careful Planning"] = "Measure twice, cast once."
   ftext["Seek The Truth"] = "Nothing gets between a journalist and their scoop!"
+  ftext["Science Rules!"] = "This lifesaving gadget is sponsored by the Science and Research Club:tm:!"
+  ftext["Camaraderie Club"] = "By the power of C Club, let compassion and camaraderie rule the day!"
   return f"{ftext[key]}" if key in ftext.keys() else "Bad ftext key."

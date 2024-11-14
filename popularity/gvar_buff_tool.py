@@ -2,7 +2,7 @@
 
 # This module manipulates buff stats
 
-cost_dict = {"Cramming": 5, "Energy Drink": 5, "Late Night Snack": 5, "Open Notes": 3, "Student Gossip": 3, "Teacher's Pet": 4, "Are You Sure You Want To Do That?": 4, "Calculated Comedy Club": 4, "Giving 110%": 5, "Research Recall": 3, "Careful Planning": 3, "Seek The Truth": 4}
+cost_dict = {"Cramming": 5, "Energy Drink": 5, "Late Night Snack": 5, "Open Notes": 3, "Student Gossip": 3, "Teacher's Pet": 4, "Are You Sure You Want To Do That?": 4, "Calculated Comedy Club": 4, "Giving 110%": 5, "Research Recall": 3, "Careful Planning": 3, "Seek The Truth": 4, "Science Rules!": 5, "Camaraderie Club": 5}
 
 def get_name(input):
   using(
